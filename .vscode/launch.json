@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Config1",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:azureFunctions.pickProcess}",
+            "preLaunchTask": "task1"
+        },
+        {
+            "name": "Config2",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:azureFunctions.pickProcess}",
+            "preLaunchTask": "task2"
+        }
+    ]
+}
